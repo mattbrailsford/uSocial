@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<info>
+		<package>
+			<name>uSocial DataType</name>
+			<version>0.0</version>
+			<license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+			<url>http://our.umbraco.org/projects/website-utilities/usocial</url>
+			<requirements>
+				<major>4</major>
+				<minor>11</minor>
+				<patch>0</patch>
+			</requirements>
+		</package>
+		<author>
+			<name>Matt Brailsford</name>
+			<website>http://theoutfield.net</website>
+		</author>
+		<readme><![CDATA[uSocial DataType contains an OAuth datatypes to provide simple ways to have clients provide the necesary details to connect to various social API.]]></readme>
+	</info>
+
+	<DocumentTypes />
+	<Templates />
+	<Stylesheets />
+	<Macros />
+	<DictionaryItems />
+	<Languages />
+	<DataTypes>
+		<DataType Name="Twitter OAuth Data Type" Id="3c8f83b1-09c6-45b7-8047-f5db885116f9" Definition="6568075c-7fd7-451b-b1db-cee0df78dd7c">
+		  <PreValues>
+			<PreValue Id="1" Value="{&quot;ConsumerKey&quot;:&quot;&quot;,&quot;ConsumerSecret&quot;:&quot;&quot;,&quot;DataFormat&quot;:1}" />
+		  </PreValues>
+		</DataType>
+		<DataType Name="Instagram OAuth Data Type" Id="f528e07f-6fc7-4b3d-8aea-5274163566b4" Definition="00f35b82-674d-47a8-bb6f-e7121b6dc6d6">
+		  <PreValues>
+			<PreValue Id="2" Value="{&quot;ConsumerKey&quot;:&quot;&quot;,&quot;ConsumerSecret&quot;:&quot;&quot;,&quot;DataFormat&quot;:1}" />
+		  </PreValues>
+		</DataType>
+	</DataTypes>
+
+	<Actions />
+
+	<control />
+
+	<files />
+
+</umbPackage>

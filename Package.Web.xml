@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<info>
+		<package>
+			<name>uSocial Web</name>
+			<version>0.0</version>
+			<license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+			<url>http://our.umbraco.org/projects/website-utilities/usocial</url>
+			<requirements>
+				<major>4</major>
+				<minor>11</minor>
+				<patch>0</patch>
+			</requirements>
+		</package>
+		<author>
+			<name>Matt Brailsford</name>
+			<website>http://theoutfield.net</website>
+		</author>
+		<readme><![CDATA[uSocial Web contains the necessary code for displaying your latest social media on a website.
+		
+		NB: uSocial Web must be used in combination with uSocial DataType]]></readme>
+	</info>
+
+	<DocumentTypes />
+	<Templates />
+	<Stylesheets />
+	<DictionaryItems />
+	<Languages />
+	<DataTypes />
+	<Macros />
+
+	<Actions />
+
+	<control />
+
+	<files />
+
+</umbPackage>

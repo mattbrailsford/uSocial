@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8532D69-8D20-47D2-857E-04D79149C898}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Our.Umbraco.uSocial</RootNamespace>
+    <AssemblyName>Our.Umbraco.uSocial.DataType</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="businesslogic, Version=1.0.4498.19835, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Packages\Umbraco452\businesslogic.dll</HintPath>
+    </Reference>
+    <Reference Include="cms, Version=1.0.4498.19837, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Packages\Umbraco452\cms.dll</HintPath>
+    </Reference>
+    <Reference Include="controls, Version=1.0.4498.19839, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Packages\Umbraco452\controls.dll</HintPath>
+    </Reference>
+    <Reference Include="DevDefined.OAuth">
+      <HintPath>..\..\Packages\DevDefined.OAuth\DevDefined.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook">
+      <HintPath>..\..\packages\Facebook.6.4.2\lib\net40-client\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="InstaSharp, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Packages\InstaSharp\InstaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="interfaces, Version=1.0.4497.23945, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Packages\Umbraco452\interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.0.5.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Packages\InstaSharp\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\Packages\InstaSharp\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="umbraco, Version=1.0.4500.21031, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Packages\Umbraco452\umbraco.dll</HintPath>
+    </Reference>
+    <Reference Include="umbraco.editorControls, Version=1.0.4500.21038, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Packages\Umbraco452\umbraco.editorControls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="DataType\AbstractJsonPrevalueEditor.cs" />
+    <Compile Include="DataType\AbstractPrevalueEditor.cs" />
+    <Compile Include="DataType\Instagram\InstagramOAuthData.cs" />
+    <Compile Include="DataType\Instagram\InstagramOAuthDataEditor.cs" />
+    <Compile Include="DataType\DataFormat.cs" />
+    <Compile Include="DataType\Instagram\InstagramOAuthDataType.cs" />
+    <Compile Include="DataType\Instagram\InstagramOAuthDataValue.cs" />
+    <Compile Include="DataType\Instagram\InstagramOAuthOptions.cs" />
+    <Compile Include="DataType\Instagram\InstagramOAuthPreValueEditor.cs" />
+    <Compile Include="DataType\Facebook\FacebookOAuthData.cs" />
+    <Compile Include="DataType\Facebook\FacebookOAuthDataEditor.cs" />
+    <Compile Include="DataType\Facebook\FacebookOAuthDataType.cs" />
+    <Compile Include="DataType\Facebook\FacebookOAuthDataValue.cs" />
+    <Compile Include="DataType\Facebook\FacebookOAuthOptions.cs" />
+    <Compile Include="DataType\Facebook\FacebookOAuthPreValueEditor.cs" />
+    <Compile Include="DataType\Twitter\TwitterOAuthData.cs" />
+    <Compile Include="DataType\Twitter\TwitterOAuthDataEditor.cs" />
+    <Compile Include="DataType\Twitter\TwitterOAuthDataType.cs" />
+    <Compile Include="DataType\Twitter\TwitterOAuthDataValue.cs" />
+    <Compile Include="DataType\Twitter\TwitterOAuthOptions.cs" />
+    <Compile Include="DataType\Twitter\TwitterOAuthPreValueEditor.cs" />
+    <Compile Include="Extensions\JsonExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\UmbracoExtensions.cs" />
+    <Compile Include="Helpers\uSocialHelper.cs" />
+    <Compile Include="Models\CallbackOptions.cs" />
+    <Compile Include="Models\Twitter\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\UI\App_GlobalResources\uSocial.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>uSocial.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\UI\Umbraco\Plugins\uSocial\BaseCallbackPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\UI\Umbraco\Plugins\uSocial\FacebookOAuthCallback.aspx.cs">
+      <DependentUpon>FacebookOAuthCallback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\UI\Umbraco\Plugins\uSocial\FacebookOAuthCallback.aspx.designer.cs">
+      <DependentUpon>FacebookOAuthCallback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\UI\Umbraco\Plugins\uSocial\InstagramOAuthCallback.aspx.cs">
+      <DependentUpon>InstagramOAuthCallback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\UI\Umbraco\Plugins\uSocial\InstagramOAuthCallback.aspx.designer.cs">
+      <DependentUpon>InstagramOAuthCallback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\UI\Umbraco\Plugins\uSocial\TwitterOAuthCallback.aspx.cs">
+      <DependentUpon>TwitterOAuthCallback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\UI\Umbraco\Plugins\uSocial\TwitterOAuthCallback.aspx.designer.cs">
+      <DependentUpon>TwitterOAuthCallback.aspx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\uSocial.js" />
+    <EmbeddedResource Include="Resources\Styles\PrevalueEditor.css" />
+    <Content Include="Web\UI\Umbraco\Plugins\uSocial\FacebookOAuthCallback.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Web\UI\Umbraco\Plugins\uSocial\InstagramOAuthCallback.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Web\UI\Umbraco\Plugins\uSocial\TwitterOAuthCallback.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <EmbeddedResource Include="Web\UI\App_GlobalResources\uSocial.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>uSocial.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>REM #################################################
+REM # Copy files 
+REM #################################################
+
+REM "$(ProjectDir)..\..\Tools\ILMerge\ILMerge.exe" /ndebug /internalize:"$(ProjectDir)..\..\Tools\ILMerge\ILMerge.txt" /targetplatform:"v4,C:\Program Files\Reference Assemblies\Microsoft\Framework\v4.0" /out:"$(TargetPath)" "$(TargetPath)" "$(TargetDir)DevDefined.OAuth.dll" "$(TargetDir)InstaSharp.dll" "$(TargetDir)Newtonsoft.Json.dll" "$(TargetDir)RestSharp.dll" "$(TargetDir)Facebook.dll"
+
+xcopy /s /y "$(TargetDir)Our.Umbraco.uSocial.*" "C:\Users\Matt\Work\TheOutfield\CreativeSpark\WelcomeToYorkshire\ToureDeFrance\Src\WelcomeToYorkshire.TourDeFrance\bin\"
+xcopy /s /y "$(ProjectDir)Web\UI\*.aspx" "C:\Users\Matt\Work\TheOutfield\CreativeSpark\WelcomeToYorkshire\ToureDeFrance\Src\WelcomeToYorkshire.TourDeFrance\"
+xcopy /s /y "$(ProjectDir)Web\UI\*.resx" "C:\Users\Matt\Work\TheOutfield\CreativeSpark\WelcomeToYorkshire\ToureDeFrance\Src\WelcomeToYorkshire.TourDeFrance\"
+
+REM C:\Windows\Microsoft.NET\Framework\v4.0.30319
+REM C:\Program Files\Reference Assemblies\Microsoft\Framework\v4.0</PostBuildEvent>
+  </PropertyGroup>
+  <!-- 
+       To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54655</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
